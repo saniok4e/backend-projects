@@ -1,25 +1,27 @@
-Проект показывает как работают аутентификация через jwt
+Проект показывает как работают аутентификация через jwt  
 Запуск: go run .
+---------------
 endpoints:
 ---------------
-POST user/register
-Пример входных данных {
-    "name": "JWT",
-    "email": "abc@xyz.com",
-    "password": "abc"
-}
+POST user/register  
+Пример входных данных {  
+    "name": "JWT",  
+    "email": "abc@xyz.com",  
+    "password": "abc"  
+}  
 Создает учетную запись и хэширует пароль
 ---------------
-POST user/login
-Пример входных данных {
-    "name": "JWT",
-    "email": "abc@xyz.com",
-    "password": "abc"
-}
+POST user/login  
+Пример входных данных {  
+    "name": "JWT",  
+    "email": "abc@xyz.com",  
+    "password": "abc"  
+}  
 Аутентификация по почте и паролю + сохранение jwt в cookie
 ---------------
-GET user/get-user
+GET user/get-user  
 Получает данные пользователя с сохраненным jwt в cookie
 --------------
-POST user/logout
+POST user/logout  
 Выходит из учетной записи
+-------------
